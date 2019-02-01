@@ -1,15 +1,20 @@
-$(document).ready(() => {
+$(document).ready(function() {
 
     // Click Events
 
-    $("#collect-contact").on("click", () => {
-        generateExpModal();
+    $("#start-survey").on("click", () => {
+        console.log("this wokrs");
+
+        // Slide down progress bar
+        $("#progress").toggle(".display-progress", ".hide-progress");
+
+
+        // Slide up survey question
     });
 
-    let generateExpModal = () => {
-        $("#survey").append("html", "<div class='question';> </div>");
-        
-    };
+    $("#collect-contact").on("click", () => {
+   
+    });
 
     $("#collect-experience").on("click", () => {
 
@@ -36,11 +41,5 @@ $(document).ready(() => {
         // collect textarea input
     
         });
-
-    // Load Modals
-        let generateExpModal = () => {
-            $("#survey").append("html", "<div class='question'> <h1> Have you ever had an online coach before? </h1> </div>");
-            
-        };
 
 });

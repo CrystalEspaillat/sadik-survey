@@ -17,6 +17,16 @@
     justify-content: center;
     align-items: center;
 }
+
+.display-progress {
+    visibility: visible;
+    transition: ease height 1s;
+}
+
+.hide-progress {
+    height: 0px;
+    visibility: hidden;
+}
   
 .progress-bar {
     display: flex;
@@ -26,6 +36,7 @@
     margin: 0 0 1rem 0;
     height: 5vh;
 }
+
 .progress-bar li {
     flex: 2;
     position: relative;
