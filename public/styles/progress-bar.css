@@ -10,23 +10,29 @@
     --font-size-default: .875rem;
   }
 
-#progress {
+  .progress {
+      overflow:hidden;
+      transition:height 0.3s ease;
+      height:auto;
+  };
+
+/* #progress {
+    display:none;
+    max-height: 0px;
+    overflow:hidden;
+    flex: 0;
+}
+
+.show-progress {
     margin: 0px 2rem 0px 2rem;
     padding: 10%;
-    display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-}
-
-.display-progress {
-    visibility: visible;
-    transition: ease height 1s;
-}
-
-.hide-progress {
-    height: 0px;
-    visibility: hidden;
-}
+    height: 100px;
+    display: flex;
+    flex:3;
+    transition:flex 3s ease;
+} */
   
 .progress-bar {
     display: flex;

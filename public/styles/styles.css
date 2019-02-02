@@ -1,6 +1,7 @@
 @font-face {
     font-family: "Futura";
-    src: url("./Futura_Book-Bold-Italic\ Regular.ttf");
+    src: asset-url('futura.eot?#iefix') format('embedded-opentype'),
+       asset-url('futura.ttf') format('truetype'),
 }
 
 * {
@@ -31,10 +32,10 @@ header img {
 }
 
 main {
-    display: flex;
-    justify-content: center;
-    flex-grow: 2;
-    height: 80vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    min-height:80vh; 
 }
 
 section {
@@ -54,7 +55,7 @@ h1 {
 }
 
 p{
-    margin: 30px 0px 50px 0px;
+    margin: 30px 0px 10px 0px;
 }
 
 footer a:link,
@@ -86,19 +87,21 @@ footer a:hover {
     background: #1E1E1E;
     color: white;
     text-decoration: none;
+    font-family: "Futura";
+    font-size: 14pt;
     font-style: italic;
     padding: 20px;
-    margin: 10px;
+    margin: 5px;
 }
 
 #product1 {
-    background:url("./4-week.png");
+    background:url("../img/4-week.png");
 }
 #product2 {
-    background:url("./8-week.png");
+    background:url("../img/8-week.png");
 }
 #product3 {
-    background:url("./12-week.png");
+    background:url("../img/12-week.png");
 }
 
 #product1,
@@ -109,5 +112,9 @@ footer a:hover {
 }
 
 #survey {
+    text-align: center;
+}
+
+#home {
     text-align: center;
 }
