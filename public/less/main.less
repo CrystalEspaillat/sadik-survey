@@ -1,0 +1,126 @@
+@font-face {
+    font-family: "Futura";
+    src: asset-url('futura.eot?#iefix') format('embedded-opentype'),
+       asset-url('futura.ttf') format('truetype'),
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: Futura;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header { 
+    background: @black;
+    color: @white;
+    display: flex;
+    height: 10vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+}
+
+/* Logo */
+header img {
+    width: 50px;
+    height: 50px;
+}
+
+h1 {
+    text-align: center;
+    font-style:italic;
+}
+
+p{
+    margin: 30px 0px 10px 0px;
+}
+
+main {
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    width:100%;
+    flex-grow: 1;
+}
+
+
+section {
+    padding: 10px;
+    width:100%;
+}
+
+#home,
+#contact,
+#experience,
+#lifestyle,
+#goal {
+    text-align: center;
+    flex: 1 0 auto;
+}
+
+footer {
+    background: @primary;
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+    padding: 5%;
+    bottom: 0px;
+    flex-shrink: 0;
+}
+
+footer a:link,
+footer a:active,
+footer a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+// Submit Button
+input[type=submit] {
+    background: @black;
+    height: calc(2em + 2px);
+    font-size: 1.5em;
+    font-family: Futura;
+    color: @white;
+    padding: 2px 50px;
+    border: none;
+    margin: 5px;
+}
+
+input[type=submit]:focus {
+    outline:none;
+}
+
+.survey {
+    padding: 5vh 10vw;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.number {
+    width: 100px;
+    height: 100px;
+    background: @black;
+    color: @primary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}

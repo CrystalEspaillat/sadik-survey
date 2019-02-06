@@ -1,0 +1,16 @@
+
+
+@import "./progress-bar.css";
+
+
+:root {
+    --color-white: #fff;
+    --color-black: #333;
+    --color-gray: #75787b;
+    --color-gray-light: #bbb;
+    --color-gray-disabled: #e8e8e8;
+    --color-primary: #8D7B54;
+    --color-primary-light: hsl(41, 25%, 66%);
+    --font-size-small: .75rem;
+    --font-size-default: .875rem;
+}

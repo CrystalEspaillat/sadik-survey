@@ -1,0 +1,117 @@
+#lifestyle-copy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#lifestyle {
+  background: @primary-light;
+}
+
+/* HIDE THE SLIDER */
+input[type=range] {
+    -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+    width: 100%; /* Specific width is required for Firefox. */
+    background: transparent; /* Otherwise white in Chrome */
+  }
+  input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+  }
+  input[type=range]:focus {
+    outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+  }
+  input[type=range]::-ms-track {
+    width: 100%;
+    cursor: pointer;
+    background: transparent; 
+    border-color: transparent;
+    color: transparent;
+  }
+
+  /* THUMB STYLES */
+  /* Special styling for WebKit/Blink */
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: 3px solid @primary-light;
+    height: 36px;
+    width: 36px;
+    border-radius: 50px;
+    background: @black;
+    cursor: pointer;
+    margin-top: -14px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+  }
+  /* All the same stuff for Firefox */
+  input[type=range]::-moz-range-thumb {
+    border: 1px solid @black;
+    height: 36px;
+    width: 16px;
+    border-radius: 3px;
+    background: @primary-light;
+    cursor: pointer;
+  }
+  /* All the same stuff for IE */
+  input[type=range]::-ms-thumb {
+    border: 1px solid @black;
+    height: 36px;
+    width: 16px;
+    border-radius: 3px;
+    background: @primary-light;
+    cursor: pointer;
+  }
+
+  /* TRACK STYLES */
+
+  input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 15px;
+    cursor: pointer;
+    background: @primary;
+    border-radius: 50px;
+    border: 3px solid @primary-light;
+  }
+  input[type=range]:focus::-webkit-slider-runnable-track {
+    background: @primary;
+  }
+  input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 15px;
+    cursor: pointer;
+    background: @primary;
+    border-radius: 50px;
+    border: 3px solid @primary-light;
+  }
+  input[type=range]::-ms-track {
+    width: 100%;
+    height: 15px;
+    cursor: pointer;
+    background: @primary;
+    border-radius: 50px;
+    border: 3px solid @primary-light;
+  }
+  input[type=range]::-ms-fill-lower {
+    background: @primary;
+    border: 3px solid @primary-light;
+    border-radius: 2.6px;
+  }
+  input[type=range]:focus::-ms-fill-lower {
+    background: @primary;
+  }
+  input[type=range]::-ms-fill-upper {
+    background: @primary;
+    border: 3px solid @primary-light;
+    border-radius: 2.6px;
+  }
+  input[type=range]:focus::-ms-fill-upper {
+    background: @primary;
+  }
+
+  /* Emojis */
+
+  .emojis {
+      display: flex;
+      justify-content: space-between;
+      font-size: 3rem;
+  }
+
+  

@@ -21,6 +21,12 @@
     "body-parser": "^1.18.3",
     "dotenv": "^6.2.0",
     "express": "^4.16.4",
-    "path": "^0.12.7"
+    "font-awesome": "^4.7.0",
+    "less": "^3.9.0",
+    "less-watch-compiler": "^1.13.0",
+    "node-mailer": "^0.1.1",
+    "nodemailer-smtp-transport": "^2.7.4",
+    "path": "^0.12.7",
+    "superagent": "^4.1.0"
   }
 }

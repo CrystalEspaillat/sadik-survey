@@ -1,0 +1,67 @@
+#contact {
+    background: @primary-light;
+}
+
+.form-group {
+
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    margin: 1rem .5rem;
+
+    label {
+        text-align: left;
+    }
+
+    input[type=text],
+    input[type=email] {
+        border: 0px solid @primary;
+        height: calc(2em + 2px);
+        font-size: @font-reg;
+    }
+
+    textarea {
+        border: 1px solid @primary;
+        font-size: @font-reg;
+        font-family: Futura;
+        font-style: italic;
+        height: 200px;
+    
+    }
+
+    input[type=text]:focus,
+    input[type=email]:focus,
+    textarea:focus {
+        outline: none;
+    };
+}
+
+// Error messages below fields 
+span.error {
+    display: none;
+}
+
+span.error-show {
+    display: inline-block;
+    font-size: @font-small;
+    color: @red;
+    padding-top: 5px;
+}
+
+// Warning message below submit button
+.show-warning {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    font-size: @font-small;
+    color: @red;
+    background: lighten(@red, 40%);
+    margin: 10px 0px;
+    padding: 10px;
+}
+
+.hide-warning {
+    display: none;
+}
