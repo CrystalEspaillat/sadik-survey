@@ -118,7 +118,7 @@ $(document).ready(function() {
             $("#form-goals").removeClass("valid");
 
             // Change & disable send button
-            $("#submit-form").text("BOOM!").addClass("sent").attr("disabled", "disabled");
+            $("#submit-form").val("Sent!").addClass("sent").attr("disabled", "disabled");
 
             // Display sent message
             $(".sent-message").addClass("show-sent-message").removeClass("sent-message");
